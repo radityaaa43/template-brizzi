@@ -50,8 +50,7 @@ try {
     $timestamp,
     $body
   );
-
-  echo htmlspecialchars($response, ENT_QUOTES, 'UTF-8');
+  echo $response;
 } catch (InvalidArgumentException $e) {
   // Handle specific exception
   error_log("Invalid argument: " . $e->getMessage());
